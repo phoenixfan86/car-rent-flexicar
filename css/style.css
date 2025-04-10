@@ -289,7 +289,7 @@ nav {
 	content: '';
 	position: absolute;
 	inset: 0;
-	background-image: url('/assets/images/contact-us-bg.jpg');
+	background-image: url('./assets/images/contact-us-bg.jpg');
 	background-size: 1400px auto;
 	background-position: left 32% bottom 20%;
 	background-repeat: no-repeat;
