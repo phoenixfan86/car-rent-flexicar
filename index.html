@@ -60,7 +60,7 @@
 					</div>
 					<div class="title-wrapper">
 						<h3 class="car-title">Volkswagen Touareg</h3>
-						<span class="subtitle">32,98 EUR</span>
+						<span class="price-large">32,98 EUR</span>
 					</div>
 					<div class="list">
 						<span class="list-title"> Include in price </span>
@@ -102,32 +102,322 @@
 			</section>
 			<!-- Car content -->
 			<!-- Booking step -->
-			<section class="booking-form hidden" id="booking-form">
-				<div class="stepper">
-					<div class="step-circle active" data-step="0">1</div>
-					<div class="step-line"></div>
-					<div class="step-circle" data-step="1">2</div>
-					<div class="step-line"></div>
-					<div class="step-circle" data-step="2">3</div>
-					<div class="step-line"></div>
-					<div class="step-circle" data-step="3">4</div>
+			<section class="booking-form" id="booking-form">
+				<!-- додати hidden в class -->
+				<div class="booking-top">
+					<div class="stepper">
+						<div class="circle-group">
+							<div class="step-circle active" data-step="0"></div>
+							<div class="step-line"></div>
+							<div class="step-line"></div>
+							<div class="step-circle" data-step="1"></div>
+							<div class="step-line"></div>
+							<div class="step-line"></div>
+							<div class="step-circle" data-step="2"></div>
+							<div class="step-line"></div>
+							<div class="step-line"></div>
+							<div class="step-circle" data-step="3"></div>
+						</div>
+						<div class="step-description">
+							<span>Add on extras</span>
+							<span>Insurance</span>
+							<span>Confirm Order</span>
+							<span>Payment</span>
+						</div>
+					</div>
+					<div class="car-small">
+						<img src="./assets/images/small-car.png" alt="Volkswagen Touareg" />
+						<div class="car-small-info">
+							<h3 class="small-title">Volkswagen Touareg</h3>
+							<p>or similar Intermediate</p>
+							<span>1 rental day</span>
+						</div>
+					</div>
 				</div>
-
 				<div class="form-steps">
-					<div class="form-step step-active" id="step-1">
-						<h3>Add on Extras</h3>
-						<!-- Контент -->
-					</div>
-					<div class="form-step" id="step-2">
-						<h3>Insurance</h3>
-						<!-- Контент -->
-					</div>
-					<div class="form-step" id="step-3">
-						<h3>Confirm Order</h3>
-						<!-- Контент -->
-					</div>
+					<article class="form-step step-active" id="step-1">
+						<h3 class="step-title">Add on Extras</h3>
+						<div class="step-items">
+							<div class="step-item">
+								<input
+									type="checkbox"
+									class="step-checkbox"
+									id="extras-1"
+									hidden
+								/>
+								<div class="step-item-top">
+									<div class="step-img">
+										<img
+											src="./assets/icons/infinity.png"
+											alt="Unlimited Mileage"
+										/>
+									</div>
+									<span class="step-label">Unlimited Mileage</span>
+								</div>
+								<span class="price-medium">15 EUR</span>
+							</div>
+							<div class="step-item">
+								<input
+									type="checkbox"
+									class="step-checkbox"
+									id="extras-2"
+									hidden
+								/>
+								<div class="step-item-top">
+									<div class="step-img">
+										<img
+											src="./assets/icons/globe.png"
+											alt="Cross-border Fee"
+										/>
+									</div>
+									<span class="step-label">Cross-border Fee</span>
+								</div>
+								<span class="price-medium">15 EUR</span>
+							</div>
+							<div class="step-item">
+								<input
+									type="checkbox"
+									class="step-checkbox"
+									id="extras-3"
+									hidden
+								/>
+								<div class="step-item-top">
+									<div class="step-img">
+										<img
+											src="./assets/icons/petrol.png"
+											alt="Full Tank Service"
+										/>
+									</div>
+									<span class="step-label">Full Tank Service</span>
+								</div>
+								<span class="price-medium">15 EUR</span>
+							</div>
+							<div class="step-item">
+								<input
+									type="checkbox"
+									class="step-checkbox"
+									id="extras-4"
+									hidden
+								/>
+								<div class="step-item-top">
+									<div class="step-img">
+										<img src="./assets/icons/baby-seat2.png" alt="Child Seat" />
+									</div>
+									<span class="step-label">Child Seat</span>
+								</div>
+								<span class="price-medium">15 EUR</span>
+							</div>
+							<div class="step-item">
+								<input
+									type="checkbox"
+									class="step-checkbox"
+									id="extras-5"
+									hidden
+								/>
+								<div class="step-item-top">
+									<div class="step-img">
+										<img
+											src="./assets/icons/navigation-pointer.png"
+											alt="GPS Navigation System"
+										/>
+									</div>
+									<span class="step-label">GPS Navigation System</span>
+								</div>
+								<span class="price-medium">15 EUR</span>
+							</div>
+							<div class="step-item">
+								<input
+									type="checkbox"
+									class="step-checkbox"
+									id="extras-6"
+									hidden
+								/>
+								<div class="step-item-top">
+									<div class="step-img">
+										<img src="./assets/icons/wifi.png" alt="Wi-Fi Hotspot" />
+									</div>
+									<span class="step-label">Wi-Fi Hotspot</span>
+								</div>
+								<span class="price-medium">15 EUR</span>
+							</div>
+							<div class="step-item">
+								<input
+									type="checkbox"
+									class="step-checkbox"
+									id="extras-7"
+									hidden
+								/>
+								<div class="step-item-top">
+									<div class="step-img">
+										<img
+											src="./assets/icons/additional-driver.png"
+											alt="Additional Driver"
+										/>
+									</div>
+									<span class="step-label">Additional Driver</span>
+								</div>
+								<span class="price-medium">15 EUR</span>
+							</div>
+							<div class="step-item">
+								<input
+									type="checkbox"
+									class="step-checkbox"
+									id="extras-8"
+									hidden
+								/>
+								<div class="step-item-top">
+									<div class="step-img">
+										<img
+											src="./assets/icons/headphones.png"
+											alt="Roadside assistance waiver"
+										/>
+									</div>
+									<span class="step-label">Roadside assistance waiver</span>
+								</div>
+								<span class="price-medium">15 EUR</span>
+							</div>
+						</div>
+					</article>
+					<article class="form-step" id="step-2">
+						<h3 class="step-title">Insurance</h3>
+						<div class="step-insurance-items">
+							<div class="insurance-item">
+								<input
+									type="checkbox"
+									class="insur-checkbox"
+									id="noinsurance"
+									hidden
+								/>
+								<div class="insurance-top">
+									<span class="label">No Insurance</span>
+									<h2>Free</h2>
+								</div>
+								<div class="">
+									<span class="label first">Important Notice:</span>
+									<ul class="insurance-list">
+										<li class="alert-mark">
+											You are fully responsible for any damage to the vehicle.
+										</li>
+										<li class="alert-mark">
+											Full repair costs will be charged in case of an accident
+											or damage (no financial limit).
+										</li>
+									</ul>
+								</div>
+								<p>
+									Full repair costs will be charged in case of an accident or
+									damage (no financial limit).
+								</p>
+							</div>
+							<div class="insurance-item">
+								<input
+									type="checkbox"
+									class="insur-checkbox"
+									id="basicinsurance"
+									hidden
+								/>
+								<div class="insurance-top">
+									<span class="label">Basic Insurance</span>
+									<h2>15 EUR/Day</h2>
+								</div>
+								<div class="">
+									<ul class="insurance-list">
+										<li class="white-mark">
+											Coverage for vehicle damage in case of an accident (with
+											excess).
+										</li>
+										<li class="white-mark">
+											Limited financial liability with a deductible/excess.
+										</li>
+										<li class="white-mark">
+											Partial coverage for car body damages (does not cover
+											tires, windows, roof, or undercarriage).
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="insurance-item">
+								<input
+									type="checkbox"
+									class="insur-checkbox"
+									id="compre-insurance"
+									hidden
+								/>
+								<div class="insurance-top">
+									<span class="label">Comprehensive Insurance</span>
+									<h2>25 EUR/Day</h2>
+								</div>
+								<div class="">
+									<ul class="insurance-list">
+										<li class="green-mark">
+											Full coverage for all damages (including tires, windows,
+											roof, and undercarriage).
+										</li>
+										<li class="green-mark">Theft protection.</li>
+										<li class="green-mark">
+											No deductible/excess (or minimal excess).
+										</li>
+										<li class="green-mark">
+											Roadside assistance in case of breakdowns or accidents.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="form-step" id="step-3">
+						<h3 class="step-title">Confirm Order</h3>
+						<div class="step-confirm-items">
+							<form action="" class="confirm-order">
+								<div class="form-item">
+									<label for="firstname"
+										>First Name <span>*</span
+										><input
+											type="text"
+											placeholder="Enter Your First Name"
+											id="firstname"
+									/></label>
+								</div>
+								<div class="form-item">
+									<label for="lastname"
+										>Last Name <span>*</span
+										><input
+											type="text"
+											placeholder="Enter Your Last Name"
+											id="lastname"
+									/></label>
+								</div>
+								<div class="form-item">
+									<label for="phone"
+										>Phone number <span>*</span>
+										<div class="phone-input">
+											<select id="country-code" class="country-code">
+												<option value="+1">🇺🇸 +1</option>
+												<option value="+44">🇬🇧 +44</option>
+												<option value="+380" selected>🇺🇦 +380</option>
+											</select>
+											<input
+												type="tel"
+												placeholder="(555)000-0000"
+												id="phone"
+												class="tel-input"
+											/></div
+									></label>
+								</div>
+								<div class="form-item">
+									<label for="email"
+										>Email <span>*</span
+										><input
+											type="email"
+											placeholder="olivia@untitledui.com"
+											id="email"
+									/></label>
+								</div>
+							</form>
+						</div>
+					</article>
 					<div class="form-step" id="step-4">
-						<h3>Payment</h3>
+						<h3 class="step-title">Payment</h3>
 						<!-- Контент -->
 					</div>
 				</div>

@@ -38,11 +38,6 @@ select {
 	color: inherit;
 }
 
-a {
-	color: var(--text-white);
-	text-decoration: none;
-}
-
 ul,
 ol {
 	list-style: none;
