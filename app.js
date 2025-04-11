@@ -7,6 +7,8 @@ const stepCircles = document.querySelectorAll('.step-circle');
 const stepLines = document.querySelectorAll('.step-line');
 const stepItems = document.querySelectorAll('.step-item');
 const insureItems = document.querySelectorAll('.insurance-item');
+const countryCode = document.getElementById('country-code');
+const phoneNumber = document.getElementById('phone-number');
 
 let currentStep = 0;
 
@@ -16,6 +18,7 @@ proceedBtn.addEventListener('click', () => {
   window.scrollTo({ top: formSection.offsetTop, behavior: 'smooth' });
 });
 
+// Stepper
 const updateStepView = () => {
 
   steps.forEach((step, index) => {
@@ -51,7 +54,7 @@ continueBtn.addEventListener('click', () => {
     updateStepView();
   } else {
     alert('Form submitted!');
-    // submit form або інші дії
+    // submit form
   }
 });
 
@@ -73,6 +76,7 @@ stepItems.forEach(item => {
 	});
 });
 
+// Select insurance
 insureItems.forEach(item => {
 const insurCheckBox = item.querySelector('.insur-checkbox')
 
@@ -84,5 +88,9 @@ const insurCheckBox = item.querySelector('.insur-checkbox')
 		item.classList.toggle('selected');
 	});
 });
+
+function getFullPhoneNumber() {
+	return countryCode.value + ' ' + phoneNumber.value;
+}
 
 updateStepView();

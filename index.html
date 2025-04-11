@@ -104,37 +104,41 @@
 			<!-- Booking step -->
 			<section class="booking-form" id="booking-form">
 				<!-- додати hidden в class -->
-				<div class="booking-top">
-					<div class="stepper">
-						<div class="circle-group">
-							<div class="step-circle active" data-step="0"></div>
-							<div class="step-line"></div>
-							<div class="step-line"></div>
-							<div class="step-circle" data-step="1"></div>
-							<div class="step-line"></div>
-							<div class="step-line"></div>
-							<div class="step-circle" data-step="2"></div>
-							<div class="step-line"></div>
-							<div class="step-line"></div>
-							<div class="step-circle" data-step="3"></div>
-						</div>
-						<div class="step-description">
-							<span>Add on extras</span>
-							<span>Insurance</span>
-							<span>Confirm Order</span>
-							<span>Payment</span>
-						</div>
-					</div>
-					<div class="car-small">
-						<img src="./assets/images/small-car.png" alt="Volkswagen Touareg" />
-						<div class="car-small-info">
-							<h3 class="small-title">Volkswagen Touareg</h3>
-							<p>or similar Intermediate</p>
-							<span>1 rental day</span>
-						</div>
-					</div>
-				</div>
+
 				<div class="form-steps">
+					<div class="booking-top">
+						<div class="stepper">
+							<div class="circle-group">
+								<div class="step-circle active" data-step="0"></div>
+								<div class="step-line"></div>
+								<div class="step-line"></div>
+								<div class="step-circle" data-step="1"></div>
+								<div class="step-line"></div>
+								<div class="step-line"></div>
+								<div class="step-circle" data-step="2"></div>
+								<div class="step-line"></div>
+								<div class="step-line"></div>
+								<div class="step-circle" data-step="3"></div>
+							</div>
+							<div class="step-description">
+								<span>Add on extras</span>
+								<span>Insurance</span>
+								<span>Confirm Order</span>
+								<span>Payment</span>
+							</div>
+						</div>
+						<div class="car-small">
+							<img
+								src="./assets/images/small-car.png"
+								alt="Volkswagen Touareg"
+							/>
+							<div class="car-small-info">
+								<h3 class="small-title">Volkswagen Touareg</h3>
+								<p>or similar Intermediate</p>
+								<span>1 rental day</span>
+							</div>
+						</div>
+					</div>
 					<article class="form-step step-active" id="step-1">
 						<h3 class="step-title">Add on Extras</h3>
 						<div class="step-items">
@@ -392,15 +396,18 @@
 										>Phone number <span>*</span>
 										<div class="phone-input">
 											<select id="country-code" class="country-code">
-												<option value="+1">🇺🇸 +1</option>
-												<option value="+44">🇬🇧 +44</option>
-												<option value="+380" selected>🇺🇦 +380</option>
+												<option value="+1">US +1</option>
+												<option value="+44">GB +44</option>
+												<option value="+380" selected>UA +380</option>
 											</select>
 											<input
 												type="tel"
 												placeholder="(555)000-0000"
 												id="phone"
 												class="tel-input"
+												pattern="^\(\d{3}\)\s?\d{3}-\d{4}$"
+												required
+												maxlength="10"
 											/></div
 									></label>
 								</div>
@@ -412,6 +419,28 @@
 											placeholder="olivia@untitledui.com"
 											id="email"
 									/></label>
+								</div>
+								<div class="order-info">
+									<div class="order-info-item">
+										<span class="info-item-label">Date</span>
+										<span class="info-item-descr"
+											>Jan 1 | 08:00 - Jan 2 | 20:00</span
+										>
+									</div>
+									<div class="order-info-item">
+										<span class="info-item-label">Location</span>
+										<span class="info-item-descr"
+											>Bratislava Bus... - Bratislava Bus...</span
+										>
+									</div>
+									<div class="order-info-item">
+										<span class="info-item-label">Volkswagen Touareg</span>
+										<span class="info-item-descr">32,98 EUR</span>
+									</div>
+									<div class="order-info-item">
+										<span class="info-item-label">Basic Insurance</span>
+										<span class="info-item-descr">15 EUR</span>
+									</div>
 								</div>
 							</form>
 						</div>

@@ -392,7 +392,16 @@ header {
 	font-size: 14px;
 }
 
+.form-steps {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 .form-step {
+	width: 100%;
 	display: none;
 	flex-direction: column;
 	align-items: start;
@@ -409,7 +418,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 8px;
+	gap: 7px;
 	flex-wrap: wrap;
 }
 
@@ -423,7 +432,7 @@ header {
 	justify-content: space-between;
 	border-radius: 8px;
 	background-color: var(--white-10);
-	padding: 8px 26px 8px 16px;
+	padding: 8px;
 	transition: background-color 0.2s, content 0.2s;
 }
 
@@ -437,7 +446,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 28px;
+	font-size: 26px;
 	border-radius: 0 8px 8px 0;
 	background-color: var(--white-20);
 	transition: background-color 0.2s, content 0.2s;
@@ -454,8 +463,8 @@ header {
 }
 
 .step-img {
-	width: 20px;
-	height: 20px;
+	width: 18px;
+	height: 18px;
 }
 
 .step-label {
@@ -555,6 +564,29 @@ header {
 	background-repeat: no-repeat;
 }
 
+.confirm-order {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+}
+
+.step-confirm-items {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.form-item {
+	width: 100%;
+}
+
+.form-item span {
+	color: var(--primary);
+}
+
 .phone-input {
 	position: relative;
 	width: 100%;
@@ -563,13 +595,47 @@ header {
 }
 
 .country-code {
-	width: 85px;
+	width: 90px;
 	position: absolute;
+	left: 10px;
 	background: transparent;
 	border: none;
 	outline: none;
-	left: 10px;
-	padding: 12px 8px 12px 14px;
+	padding: 12px 5px;
+}
+
+option {
+	color: var(--text-white-50);
+	background-color: var(--bg-color);
+}
+
+.tel-input {
+	padding-left: 100px;
+}
+
+.order-info {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 16px;
+	border-radius: 16px;
+	background-color: var(--white-5);
+}
+
+.order-info-item {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.info-item-label {
+	font-size: 14px;
+}
+
+.info-item-descr {
+	font-size: 14px;
+	font-weight: 300;
 }
 
 /* Contact us */
@@ -662,7 +728,7 @@ header {
 	position: relative;
 }
 
-.descr-wrapper .subtitle {
+.descr-wrapper {
 	font-weight: 700;
 	margin-bottom: 8px;
 }
