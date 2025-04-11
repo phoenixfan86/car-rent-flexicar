@@ -821,7 +821,7 @@ input {
 	}
 
 	.form-step {
-		display: block !important;
+		display: block;
 	}
 	.btn-continue {
 		display: none;
