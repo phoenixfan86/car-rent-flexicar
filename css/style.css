@@ -134,6 +134,13 @@ header {
 	gap: 24px;
 }
 
+.car-info {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
 .img {
 	position: relative;
 	width: 100%;
@@ -268,10 +275,6 @@ header {
 	background-color: var(--primary-20);
 }
 
-.hidden {
-	display: none;
-}
-
 /* Booking & Steps */
 
 .booking-form {
@@ -394,7 +397,7 @@ header {
 
 .form-steps {
 	width: 100%;
-	display: flex;
+	display: block;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -636,6 +639,10 @@ option {
 .info-item-descr {
 	font-size: 14px;
 	font-weight: 300;
+}
+
+.hidden {
+	display: none;
 }
 
 /* Contact us */
