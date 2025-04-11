@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<script defer src="app.js"></script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/reset.css" />
@@ -51,7 +52,8 @@
 			</div>
 		</header>
 		<main>
-			<section class="car-content">
+			<!-- Car Content -->
+			<section class="car-content" id="car-content">
 				<article class="big-car">
 					<div class="img">
 						<img src="./assets/images/car.png" alt="Volkswagen Touareg" />
@@ -98,6 +100,42 @@
 				</article>
 				<button class="btn">Proceed to Booking</button>
 			</section>
+			<!-- Car content -->
+			<!-- Booking step -->
+			<section class="booking-form hidden" id="booking-form">
+				<div class="stepper">
+					<div class="step-circle active" data-step="0">1</div>
+					<div class="step-line"></div>
+					<div class="step-circle" data-step="1">2</div>
+					<div class="step-line"></div>
+					<div class="step-circle" data-step="2">3</div>
+					<div class="step-line"></div>
+					<div class="step-circle" data-step="3">4</div>
+				</div>
+
+				<div class="form-steps">
+					<div class="form-step step-active" id="step-1">
+						<h3>Add on Extras</h3>
+						<!-- Контент -->
+					</div>
+					<div class="form-step" id="step-2">
+						<h3>Insurance</h3>
+						<!-- Контент -->
+					</div>
+					<div class="form-step" id="step-3">
+						<h3>Confirm Order</h3>
+						<!-- Контент -->
+					</div>
+					<div class="form-step" id="step-4">
+						<h3>Payment</h3>
+						<!-- Контент -->
+					</div>
+				</div>
+
+				<button class="btn btn-continue">Continue</button>
+			</section>
+			<!-- Booking step -->
+			<!-- Contact Us -->
 			<section class="contact-us">
 				<div class="contact-wrapper">
 					<div class="contact-img">
@@ -123,7 +161,9 @@
 					</div>
 				</div>
 			</section>
+			<!-- Contact Us -->
 		</main>
+		<!-- Footer -->
 		<footer>
 			<div class="footer-wrapper">
 				<div class="footer-top">
@@ -156,5 +196,6 @@
 				</div>
 			</div>
 		</footer>
+		<!-- Footer -->
 	</body>
 </html>
