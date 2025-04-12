@@ -6,6 +6,8 @@
 	--white-05: rgba(30, 30, 32, 1);
 	--white-10: rgba(57, 57, 59, 1);
 	--white-20: rgba(79, 79, 81, 1);
+	--white-90: rgba(233, 233, 233, 1);
+
 	--bg-color: rgba(18, 18, 20, 1);
 	--text-white: rgba(254, 254, 255, 1);
 	--text-white-50: rgba(145, 145, 146, 1);
@@ -1150,6 +1152,14 @@ input {
 		align-items: start;
 		padding: 128px 228px 0 228px;
 		gap: 24px;
+	}
+
+	.breadcrumbs {
+		margin-bottom: 40px;
+	}
+
+	.breadcrumbs span {
+		color: var(--white-90);
 	}
 
 	/* Car content */
