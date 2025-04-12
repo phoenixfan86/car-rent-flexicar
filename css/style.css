@@ -1067,7 +1067,7 @@ input {
 	.footer-top {
 		flex-direction: row;
 		align-items: center;
-		justify-content: start;
+		justify-content: space-between;
 	}
 
 	.footer-form {
