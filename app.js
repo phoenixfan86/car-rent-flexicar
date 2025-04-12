@@ -1,6 +1,7 @@
 const proceedBtn = document.querySelector('.btn');
 const carContentSection = document.getElementById('car-content');
 const formSection = document.getElementById('booking-form');
+const altPaymentBtn = document.querySelector('.btn-alt-payment');
 const continueBtn = document.querySelector('.btn-continue');
 const steps = document.querySelectorAll('.form-step');
 const stepCircles = document.querySelectorAll('.step-circle');
@@ -45,7 +46,14 @@ const updateStepView = () => {
     if (lineAfter) lineAfter.classList.add('active-line');
   }
 
-  continueBtn.textContent = currentStep === steps.length - 1 ? 'Submit' : 'Continue';
+  if (currentStep === 2) {
+    continueBtn.textContent = currentStep === 2 ? 'Pay Now' : 'Continue';
+  altPaymentBtn.classList.remove('hidden');
+} else {
+  altPaymentBtn.classList.add('hidden');
+}
+
+  
 };
 
 continueBtn.addEventListener('click', () => {

@@ -13,41 +13,49 @@
 			<div class="logo">
 				<img src="./assets/images/logo.png" alt="Flexicar" />
 			</div>
-			<input type="checkbox" id="menu-toggle" hidden />
+			<div class="header-wrapper">
+				<input type="checkbox" id="menu-toggle" hidden />
+				<label for="menu-toggle" class="menu-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
 
-			<label for="menu-toggle" class="menu-icon">
-				<span></span>
-				<span></span>
-				<span></span>
-			</label>
-			<nav class="top-menu">
-				<ul class="menu">
-					<li>
-						<a href="#"> Book </a>
-					</li>
-					<li>
-						<a href="#"> Help </a>
-					</li>
-					<li>
-						<a href="#"> FAQ </a>
-					</li>
-					<li>
-						<a href="#"> Rental Policies </a>
-					</li>
-					<li>
-						<a href="#"> Blog&Guides </a>
-					</li>
-				</ul>
-			</nav>
-			<div class="user-wrapper">
-				<div class="lang-wrapper">EN</div>
-				<div class="phone-wrapper">
-					<img src="./assets/icons/phone.png" alt="phone" />
-					<span>+1234567890</span>
-				</div>
-				<div class="login-wrapper">
-					<img src="./assets/icons/log-in.png" alt="Login" />
-					<span>Sign In</span>
+				<nav class="top-menu">
+					<ul class="menu">
+						<li>
+							<a href="#"> Book </a>
+						</li>
+						<li>
+							<a href="#"> Help </a>
+						</li>
+						<li>
+							<a href="#"> FAQ </a>
+						</li>
+						<li>
+							<a href="#"> Rental Policies </a>
+						</li>
+						<li>
+							<a href="#"> Blog&Guides </a>
+						</li>
+					</ul>
+				</nav>
+				<div class="user-wrapper">
+					<div class="lang-wrapper">
+						<select name="lang" id="lang" class="select">
+							<option value="en" class="lang">EN</option>
+							<option value="de" class="lang">DE</option>
+							<option value="ua" class="lang">UA</option>
+						</select>
+					</div>
+					<div class="phone-wrapper">
+						<img src="./assets/icons/phone.png" alt="phone" />
+						<span>+1234567890</span>
+					</div>
+					<div class="login-wrapper">
+						<img src="./assets/icons/log-in.png" alt="Login" />
+						<span>Sign In</span>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -61,7 +69,10 @@
 					<div class="car-info">
 						<div class="title-wrapper">
 							<h3 class="car-title">Volkswagen Touareg</h3>
-							<span class="price-large">32,98 EUR</span>
+							<div class="price-wrapper">
+								<span class="price-large">32,98</span>
+								<span class="currency">EUR</span><span class="day">/day</span>
+							</div>
 						</div>
 						<div class="list">
 							<span class="list-title"> Include in price </span>
@@ -149,16 +160,17 @@
 									id="extras-1"
 									hidden
 								/>
-								<div class="step-item-top">
-									<div class="step-img">
-										<img
-											src="./assets/icons/infinity.png"
-											alt="Unlimited Mileage"
-										/>
-									</div>
-									<span class="step-label">Unlimited Mileage</span>
+
+								<div class="step-img">
+									<img
+										src="./assets/icons/infinity.png"
+										alt="Unlimited Mileage"
+									/>
 								</div>
-								<span class="price-medium">15 EUR</span>
+								<div class="step-item-content">
+									<span class="step-label">Unlimited Mileage</span>
+									<span class="price-medium">15 EUR</span>
+								</div>
 							</div>
 							<div class="step-item">
 								<input
@@ -167,16 +179,15 @@
 									id="extras-2"
 									hidden
 								/>
-								<div class="step-item-top">
-									<div class="step-img">
-										<img
-											src="./assets/icons/globe.png"
-											alt="Cross-border Fee"
-										/>
-									</div>
-									<span class="step-label">Cross-border Fee</span>
+
+								<div class="step-img">
+									<img src="./assets/icons/globe.png" alt="Cross-border Fee" />
 								</div>
-								<span class="price-medium">15 EUR</span>
+								<div class="step-item-content">
+									<span class="step-label">Cross-border Fee</span>
+
+									<span class="price-medium">15 EUR</span>
+								</div>
 							</div>
 							<div class="step-item">
 								<input
@@ -185,16 +196,16 @@
 									id="extras-3"
 									hidden
 								/>
-								<div class="step-item-top">
-									<div class="step-img">
-										<img
-											src="./assets/icons/petrol.png"
-											alt="Full Tank Service"
-										/>
-									</div>
-									<span class="step-label">Full Tank Service</span>
+								<div class="step-img">
+									<img
+										src="./assets/icons/petrol.png"
+										alt="Full Tank Service"
+									/>
 								</div>
-								<span class="price-medium">15 EUR</span>
+								<div class="step-item-content">
+									<span class="step-label">Full Tank Service</span>
+									<span class="price-medium">15 EUR</span>
+								</div>
 							</div>
 							<div class="step-item">
 								<input
@@ -203,13 +214,13 @@
 									id="extras-4"
 									hidden
 								/>
-								<div class="step-item-top">
-									<div class="step-img">
-										<img src="./assets/icons/baby-seat2.png" alt="Child Seat" />
-									</div>
-									<span class="step-label">Child Seat</span>
+								<div class="step-img">
+									<img src="./assets/icons/baby-seat2.png" alt="Child Seat" />
 								</div>
-								<span class="price-medium">15 EUR</span>
+								<div class="step-item-content">
+									<span class="step-label">Child Seat</span>
+									<span class="price-medium">15 EUR</span>
+								</div>
 							</div>
 							<div class="step-item">
 								<input
@@ -218,16 +229,16 @@
 									id="extras-5"
 									hidden
 								/>
-								<div class="step-item-top">
-									<div class="step-img">
-										<img
-											src="./assets/icons/navigation-pointer.png"
-											alt="GPS Navigation System"
-										/>
-									</div>
-									<span class="step-label">GPS Navigation System</span>
+								<div class="step-img">
+									<img
+										src="./assets/icons/navigation-pointer.png"
+										alt="GPS Navigation System"
+									/>
 								</div>
-								<span class="price-medium">15 EUR</span>
+								<div class="step-item-content">
+									<span class="step-label">GPS Navigation System</span>
+									<span class="price-medium">15 EUR</span>
+								</div>
 							</div>
 							<div class="step-item">
 								<input
@@ -236,13 +247,13 @@
 									id="extras-6"
 									hidden
 								/>
-								<div class="step-item-top">
-									<div class="step-img">
-										<img src="./assets/icons/wifi.png" alt="Wi-Fi Hotspot" />
-									</div>
-									<span class="step-label">Wi-Fi Hotspot</span>
+								<div class="step-img">
+									<img src="./assets/icons/wifi.png" alt="Wi-Fi Hotspot" />
 								</div>
-								<span class="price-medium">15 EUR</span>
+								<div class="step-item-content">
+									<span class="step-label">Wi-Fi Hotspot</span>
+									<span class="price-medium">15 EUR</span>
+								</div>
 							</div>
 							<div class="step-item">
 								<input
@@ -251,16 +262,16 @@
 									id="extras-7"
 									hidden
 								/>
-								<div class="step-item-top">
-									<div class="step-img">
-										<img
-											src="./assets/icons/additional-driver.png"
-											alt="Additional Driver"
-										/>
-									</div>
-									<span class="step-label">Additional Driver</span>
+								<div class="step-img">
+									<img
+										src="./assets/icons/additional-driver.png"
+										alt="Additional Driver"
+									/>
 								</div>
-								<span class="price-medium">15 EUR</span>
+								<div class="step-item-content">
+									<span class="step-label">Additional Driver</span>
+									<span class="price-medium">15 EUR</span>
+								</div>
 							</div>
 							<div class="step-item">
 								<input
@@ -269,16 +280,16 @@
 									id="extras-8"
 									hidden
 								/>
-								<div class="step-item-top">
-									<div class="step-img">
-										<img
-											src="./assets/icons/headphones.png"
-											alt="Roadside assistance waiver"
-										/>
-									</div>
-									<span class="step-label">Roadside assistance waiver</span>
+								<div class="step-img">
+									<img
+										src="./assets/icons/headphones.png"
+										alt="Roadside assistance waiver"
+									/>
 								</div>
-								<span class="price-medium">15 EUR</span>
+								<div class="step-item-content">
+									<span class="step-label">Roadside assistance waiver</span>
+									<span class="price-medium">15 EUR</span>
+								</div>
 							</div>
 						</div>
 					</article>
@@ -395,7 +406,7 @@
 									<label for="phone"
 										>Phone number <span>*</span>
 										<div class="phone-input">
-											<select id="country-code" class="country-code">
+											<select id="country-code" class="select">
 												<option value="+1">US +1</option>
 												<option value="+44">GB +44</option>
 												<option value="+380" selected>UA +380</option>
@@ -420,29 +431,39 @@
 											id="email"
 									/></label>
 								</div>
-								<div class="order-info">
-									<div class="order-info-item">
-										<span class="info-item-label">Date</span>
-										<span class="info-item-descr"
-											>Jan 1 | 08:00 - Jan 2 | 20:00</span
-										>
-									</div>
-									<div class="order-info-item">
-										<span class="info-item-label">Location</span>
-										<span class="info-item-descr"
-											>Bratislava Bus... - Bratislava Bus...</span
-										>
-									</div>
-									<div class="order-info-item">
-										<span class="info-item-label">Volkswagen Touareg</span>
-										<span class="info-item-descr">32,98 EUR</span>
-									</div>
-									<div class="order-info-item">
-										<span class="info-item-label">Basic Insurance</span>
-										<span class="info-item-descr">15 EUR</span>
-									</div>
+								<div class="accept">
+									<input
+										type="checkbox"
+										id="accept"
+										required
+										class="accept-input"
+									/><label for="accept" class="accept-label"
+										>I accept the terms & conditions</label
+									>
 								</div>
 							</form>
+							<div class="order-info">
+								<div class="order-info-item">
+									<span class="info-item-label">Date</span>
+									<span class="info-item-descr"
+										>Jan 1 | 08:00 - Jan 2 | 20:00</span
+									>
+								</div>
+								<div class="order-info-item">
+									<span class="info-item-label">Location</span>
+									<span class="info-item-descr"
+										>Bratislava Bus... - Bratislava Bus...</span
+									>
+								</div>
+								<div class="order-info-item">
+									<span class="info-item-label">Volkswagen Touareg</span>
+									<span class="info-item-descr">32,98 EUR</span>
+								</div>
+								<div class="order-info-item">
+									<span class="info-item-label">Basic Insurance</span>
+									<span class="info-item-descr">15 EUR</span>
+								</div>
+							</div>
 						</div>
 					</article>
 					<div class="form-step" id="step-4">
@@ -451,7 +472,10 @@
 					</div>
 				</div>
 
-				<button class="btn btn-continue">Continue</button>
+				<div class="form-button">
+					<button class="btn btn-alt-payment hidden">Pay Cash</button>
+					<button class="btn btn-continue">Continue</button>
+				</div>
 			</section>
 			<!-- Booking step -->
 			<!-- Contact Us -->
@@ -486,23 +510,26 @@
 		<footer>
 			<div class="footer-wrapper">
 				<div class="footer-top">
-					<div class="logo">
-						<img src="./assets/images/logo.png" alt="Flexicar" />
+					<div class="logo-wrapper">
+						<div class="logo">
+							<img src="./assets/images/logo.png" alt="Flexicar" />
+						</div>
+						<p>Your Trusted Ride Awaits.</p>
 					</div>
-					<p>Your Trusted Ride Awaits.</p>
+					<form action="" class="footer-form">
+						<label for="email">Stay up to date</label>
+						<div class="footer-input">
+							<input
+								type="email"
+								name=""
+								id="email"
+								placeholder="Enter your email"
+							/>
+							<button class="btn-small-second">Subscribe</button>
+						</div>
+					</form>
 				</div>
-				<form action="" class="footer-form">
-					<label for="email">Stay up to date</label>
-					<div class="footer-input">
-						<input
-							type="email"
-							name=""
-							id="email"
-							placeholder="Enter your email"
-						/>
-						<button class="btn-small-second">Subscribe</button>
-					</div>
-				</form>
+
 				<div class="footer-bottom">
 					<p>© 2077 Untitled UI. All rights reserved.</p>
 					<nav class="footer-link">
