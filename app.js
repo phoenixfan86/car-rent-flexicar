@@ -84,7 +84,7 @@ stepItems.forEach(item => {
 	});
 });
 
-// Select insurance
+// Select one insurance
 insureItems.forEach(item => {
 const insurCheckBox = item.querySelector('.insur-checkbox')
 
