@@ -305,7 +305,7 @@ header {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding-bottom: 80px;
+	margin-bottom: 80px;
 	color: var(--text-white);
 }
 
@@ -674,6 +674,7 @@ option {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	color: var(--text-white);
 	transform: translate(-50%, -50%);
 }
 
@@ -722,6 +723,10 @@ option {
 	display: none;
 }
 
+.mobile-hidden {
+	display: none;
+}
+
 .step-active {
 	display: block;
 }
@@ -731,7 +736,6 @@ option {
 .contact-us {
 	position: relative;
 	width: 100%;
-	height: 466px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -815,23 +819,12 @@ option {
 }
 
 .descr-wrapper {
-	position: relative;
-}
-
-.descr-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 	font-weight: 700;
 	margin-bottom: 8px;
-}
-
-.descr-wrapper::before {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	content: '';
-	width: 361px;
-	height: 142px;
-	border-radius: 50%;
 }
 
 /* Footer */
@@ -1009,6 +1002,7 @@ input {
 	.step-insurance-items {
 		flex-direction: row;
 		justify-content: center;
+		gap: 16px;
 	}
 
 	.insurance-item {
@@ -1077,7 +1071,7 @@ input {
 	}
 }
 /* change to 1920px */
-@media (min-width: 1440px) {
+@media (min-width: 1920px) {
 	header {
 		height: 72px;
 		padding: 16px 40px;
@@ -1141,5 +1135,153 @@ input {
 		width: 112px;
 		display: flex;
 		gap: 4px;
+	}
+
+	main {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.content-wrapper {
+		width: 100%;
+		display: flex;
+		align-items: start;
+		padding: 128px 228px 0 228px;
+		gap: 24px;
+	}
+
+	/* Car content */
+
+	.car-content {
+		width: 968px;
+		border-bottom: 1px solid var(--white-20);
+		border-radius: 16px 16px 0 0;
+		background-color: var(--white-05);
+	}
+
+	.hidden {
+		display: flex;
+	}
+
+	.btn-hidden {
+		display: none;
+	}
+
+	.img {
+		width: 460px;
+		height: 249px;
+	}
+
+	.car-info {
+		width: 400px;
+	}
+
+	.car-title {
+		font-size: 32px;
+		font-weight: -600;
+	}
+
+	.short-info {
+		width: 302px;
+	}
+
+	.booking-form {
+		width: 968px;
+		background-color: var(--white-05);
+		border-radius: 0 0 16px 16px;
+	}
+
+	.booking-top {
+		display: none;
+	}
+
+	.form-step {
+		display: block;
+		padding: 0 24px 40px 24px;
+	}
+
+	.step-title {
+		font-size: 24px;
+		margin-top: 16px;
+		color: var(--text-white);
+	}
+
+	.step-items {
+		justify-content: start;
+	}
+
+	.step-item {
+		width: 294px;
+	}
+
+	.step-insurance-items {
+		justify-content: space-between;
+	}
+
+	.insurance-item {
+		width: 294px;
+		padding: 24px;
+	}
+
+	h2 {
+		font-size: 32px;
+		font-weight: 600;
+	}
+
+	.desktop-hidden {
+		display: none;
+	}
+
+	.confirm-form {
+		width: 472px;
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.order-info-desktop {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		padding: 12px;
+		border-radius: 16px;
+		color: var(--text-white);
+		background-color: var(--white-5);
+	}
+
+	.form-button {
+		padding: 0 12px;
+		color: var(--text-white);
+	}
+
+	.contact-wrapper {
+		padding: 80px 231px;
+	}
+
+	.contact-us::before {
+		background-size: 2048px auto;
+	}
+
+	footer {
+		padding: 60px 228px 48px 228px;
+	}
+
+	footer p {
+		font-size: 16px;
+	}
+
+	.footer-top {
+		justify-content: space-between;
+	}
+
+	.footer-form {
+		width: 480px;
+	}
+
+	.footer-link li {
+		font-size: 16px;
 	}
 }
