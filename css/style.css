@@ -154,8 +154,9 @@ header {
 
 .img {
 	position: relative;
+	max-width: 520px;
 	width: 100%;
-	height: 188px;
+	height: 100%;
 	z-index: 1;
 }
 
